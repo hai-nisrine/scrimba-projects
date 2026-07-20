@@ -1,0 +1,71 @@
+
+
+@font-face {
+ font-family:'digital-clock-font';
+ src: url('font/DS-DIGIT.TTF');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(33, 28, 86)
+}
+
+body { 
+    text-align: center;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 1rem 0;
+    color: white;
+    padding: 2rem;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons {
+   display: flex;
+  gap: 0.5rem;
+}
+
+#home-score, #guest-score {
+  font-family: 'digital-clock-font', monospace;
+  font-size: 7rem;
+  color: #d84283;
+  background-color: black;
+  border-radius: 10px;
+   width: 250px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+    align-items: center;
+    font-size: 2rem;
+    padding: 0.7rem 1rem;
+    margin: 0.5rem;
+    border: 2px solid rgb(117, 162, 214);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(117, 162, 214);
+    font-family:'digital-clock-font';
+}
