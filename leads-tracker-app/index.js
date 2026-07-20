@@ -1,12 +1,12 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
-
-const firebaseConfig = {
-    databaseURL: "https://leads-tracker-app-f4afc-default-rtdb.europe-west1.firebasedatabase.app/"
-
-}
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js"
+import { getDatabase } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-database.js";
+import { firebaseConfig } from "./firebase-config";
 
 
 const app = initializeApp(firebaseConfig);
+const database = getDatabase(app)
+
+
 
 
 
