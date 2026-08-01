@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Color Scheme Generator</title>
+</head>
+<body>
+    <div class="app-card">
+    <header>
+        <input type="color" id="color-picker" value="#ff0000" aria-label="Pick a color">
+        <select id="mode-picker" aria-label="Pick a mode">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+        </select>
+        <button id="get-scheme-btn">Get color scheme</button>
+    </header>
+
+    <div class="result-container">
+    <div class="colors-row" id="colors-row">
+        <div class="color-swatch" style="background-color: #F55A5A;"></div>
+        <div class="color-swatch" style="background-color: #2B283A;"></div>
+        <div class="color-swatch" style="background-color: #FBF3AB;"></div>
+        <div class="color-swatch" style="background-color: #AAD1B6;"></div>
+        <div class="color-swatch" style="background-color: #A626D3;"></div>
+    </div>
+    <div class="hex-row" id="hex-row">
+        <span>#F55A5A</span>
+        <span>#2B283A</span>
+        <span>#FBF3AB</span>
+        <span>#AAD1B6</span>
+        <span>#A626D3</span>
+    </div>
+</div>
+</div>
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
