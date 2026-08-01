@@ -7,6 +7,8 @@ let hexRow = document.getElementById("hex-row")
 let colorArr = []
 
 function renderColors(arr) {
+    colorRow.innerHTML = ""
+    hexRow.innerHTML = ""
     
     for (let el of arr) {
         colorRow.innerHTML += `
@@ -40,8 +42,6 @@ getSchemeBtn.addEventListener("click", () => {
         for (let color of data.colors) {
             colorArr.push(color.hex.value)
         }  
-        colorRow.innerHTML = ""
-        hexRow.innerHTML = ""
         renderColors(colorArr)
     
     })
