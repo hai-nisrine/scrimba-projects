@@ -41,11 +41,8 @@ header {
 
 .hex-row {
     display: flex;
-    padding: 16px 0;
 }
 
 .hex-row span {
     flex: 1;
-    font-size: 14px;
-    color: #333;
 }

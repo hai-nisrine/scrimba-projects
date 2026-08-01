@@ -17,7 +17,6 @@ function renderColors(arr) {
         </div> 
         `
         hexRow.innerHTML += `
-        <div class="hex-code">
         <span>${el}</span>
         </div>
         `
